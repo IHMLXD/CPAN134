@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="Form.php" method="post" name="Form" id="Formid"></form>
+        First Name <input type="text" id="fname" name="fname" maxlength="15">
+        <br>
+        <br>
+        Last Name <input type="text" id="lname" name="lname" maxlength="15">
+        <br>
+        <br>
+        Mark 1 <input type="number" id="markone" name="markone" maxlength="3">
+        <br>
+        <br>
+        Mark 2 <input type="number" id="marktwo" name="marktwo" maxlength="3">
+        <br>
+        <br>
+        Mark 3 <input type="number" id="markthree" name="markthree" maxlength="3">
+        <br>
+        <form id="grade"></form>
+        <p id="result"></p>
+        <button onclick="validateTxt()">Validate</button>
+        <button onclick="printResult(document.getElementById('markone').value,document.getElementById('marktwo').value,document.getElementById('markthree').value),message();">Print Result</button>
+        <script>
+            var average = printResult(markone,marktwo,markthree);
+            function printResult(mark1,mark2,mark3) {
+            return (mark1+mark2+mark3)/3;
+            }
+            var message;
+            function message() {
+            if (average>=90) {
+                message = "Awesome";
+            }
+            else if (average>=80) {
+                message = "Very Good";
+            }
+            else if (average>=50) {
+                message = "Ok";
+            }
+            else {
+                message = "Fail";
+            }
+            document.getElementById("result").innerHTML = message;
+        }
+        </script>
+    </body>
+</html>
