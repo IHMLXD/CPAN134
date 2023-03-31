@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>
+        Jimmy's Repair Shop Help
+        </title>
+        <link rel="stylesheet" type="text/css" href="../Ramdeo2/ProjectCSS.css">
+    </head>
+    <body>
+        <header>
+            <h1>
+                Help Form
+            </h1>
+        </header>
+        <nav>
+            <a href ="../Ramdeo2/Project1.html">Home</a>
+            <a href ="../Ramdeo2/Project1Start.html">Where To Start</a>
+            Help
+            <a href="../Ramdeo2/Project1ContactUs.html">Contact Us</a>
+            <a href ="../Ramdeo2/Project1Services.html">Services</a>
+            <a href="../Ramdeo2/Project1JobListings.html">Job Listings</a>
+        </nav>
+        <main>
+        <h2>
+            What Is The Problem?
+        </h2>
+        <form action="helpForm.php" method="post" name="helpForm" id="helpFormid">
+            <input type="radio" name="options" id="option1" value="pc">
+            <label for="option1">Computer</label>
+            <br>
+            <input type="radio" name="options" id="option2" value="wifi">
+            <label for="option2">Wifi</label>
+            <br>
+            <input type="radio" name="options" id="option3" value="automobile">
+            <label for="option3">Automobile</label>
+            <br>
+            <input type="radio" name="options" id="option4" value="houseApplicance">
+            <label for="option4">House Applicance</label>
+            <br>
+            <input type="radio" name="options" id="option5" value="other">
+            <label for="option5">Other (Write in comments)</label>
+            <br>
+            <br>
+            <input type="checkbox" name="person1" id="person1id" value="jimmy">
+            <label for="person1id">Jimmy</label>
+            <br>
+            <input type="checkbox" name="person2" id="person2id" value="bob">
+            <label for="person2id">Bob</label>
+            <br>
+            <input type="checkbox" name="person3" id="person3id" value="roger">
+            <label for="person3id">Roger</label>
+            <br>
+            <br>
+            <label for="severity">What is the severity of this issue? Between 1 and 10</label>
+            <input type="number" min="1" max="10" id="severity" name="severityProblem">
+            <br>
+            <br>
+            Email <input type="text" id="email" name="email">
+            <br>
+            <br>
+            Telephone # <input type="text" id="telephone" name="telephone" maxlength="10">
+            <br>
+            <br>
+            Comments (More Information)
+            <br>
+            <textarea name="comments" id="comment" row="5" cols="30" accessKey="I"></textarea>
+            <br>
+            <br>
+            <input type="submit" name="submitButton" id="submitButton" value="Submit">
+            <input type="reset" name="resetButton" id="resetButton" value="Reset">
+            <br>
+            <br>
+        </form>
+        </main>
+        <footer>
+            Copyright &copy 2023 <span class="bold"> Jimmy Repair Shop </span>
+            <br>
+            123 Repair Avenue
+        </footer>
+    </body>
+</html>
