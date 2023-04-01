@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            Lab 7
+        </title>
+    </head>
+    <body>
+        <button onclick="show()">Christmas</button>
+        <button onClick="show2()">Halloween</button>
+        <button onClick="show3()">Easter</button>
+        
+        <div id="first" style="display:none;">
+            <img src="../lab7/Christmas.avif" style="height:200px; width:200px; float:left;">
+        </div>
+
+        <div id="second" style="display:none;">
+            <img src="../lab7/Halloween.avif" style="height:200px; width:200px; float:left;">
+        </div>
+
+        <div id="third" style="display:none;">
+            <img src="../lab7/Easter.jpg" style="height:200px; width:200px;">
+        </div>
+        
+        <script>
+            const show = () => {
+                document.getElementById("first").style.display ='block';
+            }
+
+            const show2 = () => {
+                document.getElementById("second").style.display ='block';
+            }
+
+            const show3 = () => {
+                document.getElementById("third").style.display ='block';
+            }
+        </script>
+        
+    </body>
+</html>
