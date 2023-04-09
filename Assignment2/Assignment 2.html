@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>
+            Assignment 2
+        </title>
+    </head>
+    <body>
+        <h1>This example demonstrates doing a calculation</h1>
+        Room Rental​: <input type="number" id="r" name="r" oninput="calc();">
+        <br>
+        Food​: <input type="number" id="f" name="f" oninput="calc();">
+        <br>
+        Entertainment​: <input type="number" id="e" name="e" oninput="calc();">
+        <br>
+        Total​: <input type="number" id="total" name="total">
+        <br>
+        With tax​: <input type="number" id="tax" name="tax">
+        <br>
+        <br>
+        <br>
+        <h1>Country:</h1>
+        <p style="font-size: xx-large;">CANADA</p>
+        <br>
+        <h1>Capital</h1>
+        <div id = "toggle">
+            <p style="font-size: xx-large;">OTTAWA</p>
+        </div>
+        <button onclick="hide()">Hide capital name</button>
+        <br>
+        <button onclick="show()">Show capital name</button>
+        <br>
+        <button onclick="toggle()">Toggle</button>
+        <br>
+            <p onmouseover="yellow(this)" style="font-size: xx-large; font-weight: bold;">Hover on this paragraph for Yellow.</p>
+        <br>
+            <p onclick="green(this)" style="font-size: xx-large; font-weight: bold;">Click on this paragraph for Green.</p>
+
+        <style>
+            .changeYcolour {
+                background-color: yellow;
+            }
+            .changeGcolour {
+                background-color: green;
+            }
+        </style>
+
+        <script>
+            function calc() {
+                var r = document.getElementById("r").value;
+                var r = parseInt(r, 10);
+                var f = document.getElementById("f").value;
+                var f = parseInt(f, 10);
+                var e = document.getElementById("e").value;
+                var e = parseInt(e, 10);
+                var total = r + f + e;
+                document.getElementById("total").value = total;
+                var tax = (r + f + e)*1.13;
+                document.getElementById("tax").value = (tax).toFixed(2);
+            }
+
+            var visible = true;
+
+            function hide() {
+                document.getElementById('toggle').style.display = 'none';
+                visible = false;
+            } 
+
+            function show() {
+                document.getElementById('toggle').style.display = 'block';
+                visible = true;
+            }
+
+
+            function toggle() {
+                if(visible == true){
+                    document.getElementById('toggle').style.display = 'none';
+                    visible = false;
+                } else {
+                    document.getElementById('toggle').style.display = 'block';
+                    visible = true
+                }
+            }
+
+            function yellow(x) {
+                x.style.backgroundColor= 'yellow';
+            }
+
+            function green(y) {
+                y.style.backgroundColor= 'green';
+            }
+        </script>
+    </body>
+</html>
