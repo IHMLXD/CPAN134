@@ -1,0 +1,82 @@
+body {
+    background-color: lawngreen;
+}
+nav{
+    text-align: center
+}
+h1 {
+    background-color: yellow;color:blue;
+    font-style: italic;
+    border-radius: 100px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+dl{
+    text-align: center;
+    font-size: large;
+    background-color: cyan;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+p{
+    text-align: center;
+    font-size: large;
+}
+footer{
+    text-align: center;
+}
+td{
+    font-size: x-large
+}
+caption{
+    font-size: x-large
+}
+a:hover{
+    color:green;
+}
+a:visited{
+    color:red;
+}
+.bold{
+    font-weight:bold;
+}
+.sideleft{
+    float: left;
+    width: auto;
+    height: auto;
+    padding-right: 20px;
+}
+.sideright{
+    float: right;
+    width: auto;
+    height: auto;
+    padding-right: 630px;
+}
+.middleimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.middleform{
+    text-align: center;
+    background-color: white;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.middletable{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.h2change{
+    background-color: yellow;
+    border-radius: 100px;
+}
+.job{
+    font-size: large;
+    font-style: italic;
+}
