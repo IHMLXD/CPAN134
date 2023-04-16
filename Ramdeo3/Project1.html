@@ -44,8 +44,15 @@
             <br>
             -Jimmy
         </p>
+        <p id="start" onmouseover="displayDate()"><strong>Today's Date (Hover Here)</strong></p>
+        <br>
         <img class="middleimg" src="../Ramdeo3/thumbsUp.jpg">
         </div>
+        <script>
+            function displayDate(){
+                document.getElementById("start").innerHTML = Date();
+            }
+        </script>
         </main>
         <footer>
             <br>

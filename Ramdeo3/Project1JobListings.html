@@ -25,16 +25,36 @@
         </h2>
         <ul>
             <li>
-                Assistant
+                <button onclick="Assistant()">Hide More Info</button>
+                <strong>Assistant:</strong> Working side by side with someone.
+                <br>
+                <div class="hid" id = "hidden1">
+                    <p>Work alongside one of us or alongside another specialist in order to get some experience.</p>
+                </div>
             </li>
             <li>
-                Office Support
+                <button onclick="Office()">Hide More Info</button>
+                <strong>Office Support:</strong> Paperwork and managing supplies.
+                <br>
+                <div class="hid" id = "hidden2">
+                    <p>Handle the management of our parts and tools, as well the use of our companies materials. Handles various paperwork related to materials and tools.</p>
+                </div>
             </li>
             <li>
-                New Specialization
+                <button onclick="Special()">Hide More Info</button>
+                <strong>Specialization:</strong> A new type of work that could be implemented, or someone else who can do a preexisting one.
+                <br>
+                <div class="hid" id = "hidden3">
+                    <p>You decide what work could be implemented and we can tell you if it will work with us or not, or work on a specialization that already exists that people can contact.</p>
+                </div>
             </li>
             <li>
-                General Worker
+                <button onclick="General()">Hide More Info</button>
+                <strong>General Worker:</strong> Simplier jobs and preparing supplies.
+                <br>
+                <div class="hid" id = "hidden4">
+                    <p>Working on smaller jobs that do not require extensive knowledge in comparsion to specializations and handle materials and tools that the office support secures for the company.</p>
+                </div>
             </li>
         </ul>
         <p class="job">
@@ -42,6 +62,22 @@
             <br>
             Contact Jimmy for more details.
         </p>
+
+        <script>
+            function Assistant(){
+                    document.getElementById('hidden1').style.display = 'none';
+            }
+            function Office(){
+                    document.getElementById('hidden2').style.display = 'none';
+
+            }
+            function Special(){
+                    document.getElementById('hidden3').style.display = 'none';
+            }
+            function General(){
+                    document.getElementById('hidden4').style.display = 'none';
+            }
+        </script>
         </main>
         <footer>
             Copyright &copy 2023 <span class="bold"> Jimmy Repair Shop </span>
