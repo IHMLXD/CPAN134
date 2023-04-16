@@ -6,6 +6,7 @@ nav{
 }
 h1 {
     background-color: yellow;
+    border: 2px solid black;
     color:black;
     font-style: italic;
     border-radius: 100px;
@@ -72,6 +73,7 @@ a:visited{
 }
 .h2change{
     background-color: yellow;
+    border: 2px solid black;
     border-radius: 100px;
 }
 .job{
